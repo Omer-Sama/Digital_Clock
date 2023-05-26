@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, darkgray 0%, darkslategray 25%, silver 51%, black 100%);
+    -webkit-animation: body 15s ease infinite;
+    animation: body 15s ease infinite;
+    overflow: hidden;
+}
+#hours{
+  width: 150px;
+  height: 200px;
+  background-color: slategray;
+  color: lemonchiffon;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  position: relative;
+  right: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  border: 2px solid;
+  padding: 10px;
+  box-shadow: 5px 10px black;
+  font-size: xxx-large;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+#minutes{
+  width: 150px;
+  height: 200px;
+  background-color: slategray;
+  color: lemonchiffon;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  position: relative;
+  right: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  border: 2px solid;
+  padding: 10px;
+  box-shadow: 5px 10px black;
+  font-size: xxx-large;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+#seconds{
+  width: 150px;
+  height: 200px;
+  background-color: slategray;
+  color: lemonchiffon;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  float: left;
+  position: relative;
+  right: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  border: 2px solid;
+  padding: 10px;
+  box-shadow: 5px 10px black;
+  font-size: xxx-large;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+#ampm{
+  width: 150px;
+  height: 200px;
+  background-color: slategray;
+  color: lemonchiffon;
+  display: flex;
+  align-items: center;
+  float: left;
+  justify-content: center;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  border: 2px solid;
+  padding: 10px;
+  box-shadow: 5px 10px black;
+  font-size: xxx-large;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+#hours:hover{
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 1;
+  background-color: darkslategray;
+  box-shadow: 5px 10px 3px 3px black;
+  color: lightgoldenrodyellow;
+}
+#minutes:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 1;
+  background-color: darkslategray;
+  box-shadow: 5px 10px 3px 3px black;
+  color: lightgoldenrodyellow;
+}
+#seconds:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 1;
+  background-color: darkslategray;
+  box-shadow: 5px 10px 3px 3px black;
+  color: lightgoldenrodyellow;
+}
+#ampm:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2);
+  z-index: 1;
+  background-color: darkslategray;
+  box-shadow: 5px 10px 3px 3px black;
+  color: lightgoldenrodyellow;
+}
+@-webkit-keyframes body {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes body {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes example{
+  0%{top: 200px;}
+  100%{top: 0px;}
+}
+#container{
+  position: relative;
+  animation-name: example;
+  animation-duration: 2.5s;
+}
+#hours{
+  animation-name: example;
+  animation-duration: 3s;
+}
+#minutes{
+  animation-name: example;
+  animation-duration: 3.5s;
+}
+#seconds{
+  animation-name: example;
+  animation-duration: 4s;
+}
+#ampm{
+  animation-name: example;
+  animation-duration: 4.5s;
+}
+#box{
+  animation-name: box;
+  animation-duration: 4s;
+}
+@keyframes box{
+  0% {
+    color: slategray;
+  }
+  100% {
+    color: lemonchiffon;
+  }
+}
+.box1{
+  z-index: 1; 
+  position: relative; 
+  bottom: 40px; 
+  right: 285px; 
+  font-size: xx-large; 
+  color: lemonchiffon;
+}
+.box2{
+  z-index: 1; 
+  position: relative; 
+  bottom: 75px; 
+  right: 100px; 
+  font-size: xx-large; 
+  color: lemonchiffon;
+}
+.box3{
+  z-index: 1; 
+  position: relative; 
+  bottom: 113px; 
+  left: 85px; 
+  font-size: xx-large; 
+  color: lemonchiffon;
+}

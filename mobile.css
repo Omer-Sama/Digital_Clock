@@ -1,0 +1,48 @@
+@media only screen and (max-width:320px){
+    #hours{
+        position: relative;
+        width: 55px;
+        height: 100px;
+        font-size: 20px;
+        left: -7px;
+    }
+    #minutes{
+        position: relative;
+        width: 55px;
+        height: 100px;
+        font-size: 20px;
+        right: 3px;
+    }
+    #seconds{
+        position: relative;
+        left: 1px;
+        width: 55px;
+        height: 100px;
+        font-size: 20px;
+    }
+    #ampm{
+        position: relative;
+        width: 55px;
+        height: 100px;
+        left: 5px;
+        font-size: large;
+    }
+    .box1{
+        position: relative;
+        left: -120px;
+        bottom: 24px;
+        font-size: large;
+    }
+    .box2{
+        position: relative;
+        left: -42px;
+        top: -44px;
+        font-size: medium;
+    }
+    .box3{
+        position: relative;
+        left: 40px;
+        top: -62px;
+        font-size: medium;
+    }
+}
